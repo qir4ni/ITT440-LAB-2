@@ -17,7 +17,7 @@ int main(void)    {
 	
 	if(pid == 0) {
 		childTask();
-		exit(EXIST_SUCCESS);
+		exit(EXIT_SUCCESS);
 	}
 	else if(pid > 0) {
 		wait(NULL);
@@ -27,6 +27,6 @@ int main(void)    {
 		printf("Unable to create child process.");
 	}
 	
-	return EXIST_SUCCESS;
+	return EXIT_SUCCESS;
 }
 
